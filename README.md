@@ -12,13 +12,13 @@ This search engine is built mainly on NLP library [spacy](https://spacy.io/).
 
 1. git clone 
 
-2. open the [index/DownloadFiles.ipynb](index/DownloadFiles.ipynb), paste password, run the notebook to retrieve pre-computed index files and models
+2. open the [index/DownloadFiles.ipynb](index/DownloadFiles.ipynb), paste password, run the notebook to retrieve pre-computed index files and models; please note that this is a necessary step as MIMIC data is sensitive.
 
-3. Paste MIMIC's data (NOTEEVENTS.csv) into [data/](data) folder.
+3. Paste MIMIC data (only NOTEEVENTS.csv needed) into the [data/](data) folder.
 
-4. (Optional) to index medical report from scratch, run [RunIndexing.ipynb](RunIndexing.ipynb)
+4. (Optional - already provided): to index medical report from scratch, run [RunIndexing.ipynb](RunIndexing.ipynb)
 
-5. (Optional) to retrain both Word2Vec models from scratch, run [RunW2VecTraining.ipynb](RunW2VecTraining.ipynb)
+5. (Optional - already provided): to retrain both Word2Vec models from scratch, run [RunW2VecTraining.ipynb](RunW2VecTraining.ipynb)
 
 6. Run [Backend.ipynb](Backend.ipynb) to start query server
 
