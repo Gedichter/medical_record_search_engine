@@ -18,3 +18,26 @@ A search engine designed specifically for medical records. The work was done in 
 
 The frontend application is written in Visual Basic.NET. The Visual Studio Project files and executables can be found in the frontend folder.
 
+## Dependency Requirements
+- pandas
+
+- spacy (install the English language package by running command ```python -m spacy download en```)
+
+- numpy
+
+- matplotlib
+
+- sklearn
+
+- gensim
+
+- fasttext
+
+- tqdm
+
+- glob
+
+- urllib3
+
+- nltk (install wordnet by running the python code ```nltk.download('wordnet')```)
+
