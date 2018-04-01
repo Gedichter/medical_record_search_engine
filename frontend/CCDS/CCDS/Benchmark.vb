@@ -1,4 +1,6 @@
-﻿Public Class Benchmark
+﻿Option Strict Off
+
+Public Class Benchmark
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Button1.Enabled = False
         Dim arr() As String = Split(My.Resources.benchmark, vbNewLine)
