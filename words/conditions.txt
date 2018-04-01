@@ -1,0 +1,57 @@
+hemorrhage
+stroke
+infection/infections
+infarction/infarct
+alzheimer/alzheimers/dementia
+diabetes/diabetes mellitus
+arthritis
+asthma
+autism
+cancer
+bronchitis
+insufficiency
+failure
+stenosis
+hypertension
+hyperlipidemia
+pain
+defect/defects
+hypertrophy
+cirrhosis
+nausea
+thrombosis
+dyspnea
+bleed/bleeding
+surgery
+lesion/lesions
+anemia
+ectasia
+polyp/polyps
+fatigue
+fever/fevers
+vomiting
+fracture/fractures
+ulcer
+tumor
+abcess
+cold
+flu/influenza
+tuberculosis
+pneumonia
+herniated disc
+heart disease/ischemic heart disease/coronary artery disease/CAD
+heart attack
+hepatitis a
+hepatitis b
+hepatitis c
+syphilis
+aids/hiv
+gonorrhea
+diarrhea
+respiratory infection/respiratory infections
+rhinitis
+depression
+schizophrenia
+borderline
+paranoia/paranoid
+narcissism/narcissistic personality disorder/narcissistic disorder
