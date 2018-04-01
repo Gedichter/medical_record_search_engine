@@ -12,7 +12,7 @@ This search engine is built mainly on NLP library [spacy](https://spacy.io/).
 
 1. git clone 
 
-2. open the [index/DownloadFiles.ipynb](index/DownloadFiles.ipynb), paste password, run the notebook to retrieve pre-computed index files and models; please note that this is a necessary step as MIMIC data is sensitive.
+2. open the [index/DownloadFiles.ipynb](index/DownloadFiles.ipynb), paste password, run the notebook to retrieve pre-computed index files and models; please note that this is a necessary step as MIMIC data is sensitive. If you did not receive a password, you can also compute these files yourself by following steps 3-5.
 
 3. Paste MIMIC data (only NOTEEVENTS.csv needed) into the [data/](data) folder.
 
