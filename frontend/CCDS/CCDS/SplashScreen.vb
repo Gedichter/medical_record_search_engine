@@ -11,6 +11,12 @@ Public Class SplashScreen
         Me.Opacity += 0.05
         If Me.Opacity = 1 Then
             Timer2.Stop()
+
+            Dim port_used As String = ""
+            While Not IsNumeric(port_used)
+                port_used = InputBox("Port number:")
+            End While
+            Form1.USEPORT = port_used
             Form1.Show()
             Timer1.Start()
         End If

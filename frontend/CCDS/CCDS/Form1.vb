@@ -4,9 +4,9 @@ Public Class Form1
     Private WithEvents tcpcl As New Net.Sockets.TcpClient()
     Private str As IO.Stream
     Private isconnected As Boolean = False
-    Private PORT As Integer = 5008
     Private log As New List(Of String)
     Private tohighlight() As String
+    Public USEPORT As Integer
 
     Private Sub AddEvent(ByVal s As String)
         log.Add(DateAndTime.Now.ToString & ": " & s)
@@ -21,6 +21,7 @@ Public Class Form1
         lst.AddRange(tohighlight)
         lst.RemoveAt(lst.Count - 1)
         tohighlight = lst.ToArray
+
         Label2.Text = "Keywords: " & ths.Replace("|", "   ")
         Dim res As String = ReadAnswer()
         Dim stop_time As DateTime = Now
@@ -96,7 +97,7 @@ Public Class Form1
     Public Function Connect()
         Try
             tcpcl = New Net.Sockets.TcpClient
-            tcpcl.Connect(Net.IPAddress.Loopback, PORT)
+            tcpcl.Connect(Net.IPAddress.Loopback, USEPORT)
             str = tcpcl.GetStream
             isconnected = True
             ToolStripSplitButton1.Image = My.Resources.Network_Drive_connected_icon__1_
@@ -162,11 +163,11 @@ Public Class Form1
     End Function
 
     Private Sub HighlightKeyword(ByVal rtb As RichTextBox, ByVal word As String, ByVal cl As Color)
-        If rtb.Text.Contains(word) Then
+        If rtb.Text.ToLower.Contains(word.ToLower) Then
             Dim oldstart As Integer = rtb.SelectionStart
             Dim start As Integer = 0
             Do
-                Dim startindex As Integer = rtb.Find(word, start, RichTextBoxFinds.WholeWord)
+                Dim startindex As Integer = rtb.Find(word, start, RichTextBoxFinds.None)
                 If startindex < 0 Or startindex > rtb.TextLength - 1 Then Exit Do
                 rtb.Select(startindex, word.Length)
                 rtb.SelectionColor = cl
