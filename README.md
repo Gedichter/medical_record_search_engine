@@ -1,5 +1,5 @@
-# medical_record_search_engine
+# Medical Record Search Engine
 
-Author: Vincent Casser, Shiyu Huang, Filip Michalsky
+Authors: Vincent Casser, Shiyu Huang, Filip Michalsky
 
-A search engine designed specifically for medical record. The work is done in cooperation with Center for Clinical Data Science (CCDS) in MGH and BWH. This repo is the final delivered product.
+A search engine designed specifically for medical records. The work is done in cooperation with the Center for Clinical Data Science (CCDS), a joint effort of MGH and BWH. This repository is the final delivered product.
