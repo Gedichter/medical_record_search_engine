@@ -4,7 +4,7 @@ Authors: Vincent Casser, Shiyu Huang, Filip Michalsky
 
 A search engine designed specifically for medical records. The project was done in cooperation with the Center for Clinical Data Science (CCDS), a joint effort between MGH and BWH. This repository is the final deliverable.
 
-The search engine's use case is looking up reports from a database based on a medical condition-specific query performed by either a machine learning engineer or a doctor. 
+The search engine's use case is looking up reports from a database based on a medical condition-specific query performed by either a machine learning engineer (use case: obtain a subset of reports for model training) or a doctor (use case: look up medical reports relevant to a case being currently reviewed). 
 
 This search engine is built mainly on NLP library [spacy](https://spacy.io/).
 
